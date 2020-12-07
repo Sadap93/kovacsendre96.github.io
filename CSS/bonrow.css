@@ -1,0 +1,168 @@
+body{
+ 
+    background-image: url(/IMG/bonrow_casette.jpg);
+    background-position:center;
+    background-position-y: 45%; ;
+    background-size: cover;
+    height:100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+/*=====HEADER=====*/
+
+
+*{
+    padding: 0;
+    margin: auto;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+    background-color:black;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    
+    
+}
+
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+img{
+    height: 100%;
+}
+nav ul li a{
+    color: white;
+    font-size: clamp(18px, 2vw, 25px);
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+    
+}
+#logos{
+    color: white;
+    display: none;
+}
+
+
+@media(max-width: 768px){
+
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        
+        position: absolute ;
+        width: 100%;
+        background:black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .8s;   
+    }
+    nav ul li{
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+       
+    }
+   
+    a:hover{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+  
+    #logos{
+        display: block;
+        padding: 0 50px;
+    }
+  
+}
+
+
+
+
+/*=====BIO=====*/
+.background{
+    width: 60vw;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 1.5rem;
+    border-radius: 1%;
+   
+    
+}
+
+.bioSection{
+    color: white;
+    padding-top:  100px;
+    
+}
+
+
+
+.bioImg{
+    width: 300px;
+    border-radius: 5%;
+    padding: 20px;
+
+}
+.members{
+   
+    text-align: center;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 2%;
+    margin: 25px;
+    filter: grayscale(50%);
+    transition: all 0.5s ease-out .1s ;
+
+}
+
+.members:hover{
+    box-shadow:3px 6px 3px 0 grey ;
+    transform: scale(1.05) ;
+    filter: none;
+      }
+
+.name{
+    font-size: 2.5rem;
+}
+
+
+@media(min-width: 768px){
+.members{
+    display:inline-flex;
+    
+}
+}
