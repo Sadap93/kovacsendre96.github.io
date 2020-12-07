@@ -25,6 +25,8 @@ nav{
     background-color:black;
     height: 80px;
     width: 100%;
+    position: fixed;
+    z-index: 1;
     
     
     
@@ -81,12 +83,14 @@ a:hover{
     ul{
         
         position: absolute ;
+        z-index: 1;
         width: 100%;
         background:black;
         top: 80px;
         left: -100%;
         text-align: center;
-        transition: all .8s;   
+        transition: all .8s;
+          
     }
     nav ul li{
         display: block;
@@ -101,6 +105,8 @@ a:hover{
     }
     #check:checked ~ ul{
         left: 0;
+        
+       
     }
   
     #logos{
@@ -155,12 +161,12 @@ a:hover{
     text-align: left;
     line-height: 20px;
 }
-
 .members:hover{
     box-shadow:3px 6px 3px 0 grey ;
     transform: scale(1.05) ;
     filter: none;
       }
+
 
 .name{
     font-size: 2.5rem;
