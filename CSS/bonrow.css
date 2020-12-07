@@ -27,9 +27,6 @@ nav{
     width: 100%;
     position: fixed;
     z-index: 1;
-    
-    
-    
 }
 
 
@@ -181,12 +178,20 @@ a:hover{
         
     }
     .background{
-        width: 60vw;
+        width: 80vw;
        
     }
     .bioImg{
         padding:15px;
         width: 250px;
     }
+
     
     }
+    @media(min-width: 1200px){
+        .background{
+            width: 60vw;
+
+    }
+}
+ 
