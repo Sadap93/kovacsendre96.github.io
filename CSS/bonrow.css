@@ -5,7 +5,7 @@ body{
     background-position-y: 45%; ;
     background-size: cover;
     height:100vh;
-    width: 100%;
+    width: 100vw;
     background-attachment: fixed;
 }
 /*=====HEADER=====*/
@@ -25,7 +25,7 @@ nav{
     background-color:black;
     height: 80px;
     width: 100%;
-    position: fixed;
+    
     
     
 }
@@ -115,11 +115,11 @@ a:hover{
 
 /*=====BIO=====*/
 .background{
-    width: 60vw;
+    width: 100vw;
     background: rgba(0, 0, 0, 0.7);
     font-size: 1.5rem;
     border-radius: 1%;
-   
+    
     
 }
 
@@ -132,21 +132,28 @@ a:hover{
 
 
 .bioImg{
-    width: 300px;
-    border-radius: 5%;
-    padding: 20px;
+    width: 180px;
+    border-radius: 10%;
+    padding:15px 0 15px 0;
+    
 
 }
 .members{
    
-    text-align: center;
-    padding: 30px;
+    
     border: 1px solid white;
     border-radius: 2%;
     margin: 25px;
     filter: grayscale(50%);
     transition: all 0.5s ease-out .1s ;
-
+    text-align: center;
+    padding: 15px;
+  
+}
+.text{
+    font-size: 1rem;
+    text-align: left;
+    line-height: 20px;
 }
 
 .members:hover{
@@ -161,8 +168,19 @@ a:hover{
 
 
 @media(min-width: 768px){
-.members{
-    display:inline-flex;
+    .members{
+        display:inline-flex;
+        
     
-}
-}
+        
+    }
+    .background{
+        width: 60vw;
+       
+    }
+    .bioImg{
+        padding:15px;
+        width: 250px;
+    }
+    
+    }
