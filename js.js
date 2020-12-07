@@ -23,10 +23,11 @@
         });
       });
 
-      $(document).ready(function(){
-        $(".member4").hover(function(){
-          $(".member2, .member3, .member1").css({'filter': "blur(4px)"});
-          }, function(){
-          $(".member2,.member3,.member1").css({'filter': "blur(0)"});
+        $(document).ready(function(){
+          $(".member").hover(function(){
+            $(".member2, .member3, .member1").css({'filter': "blur(4px)"});
+            }, function(){
+            $(".member2,.member3,.member1").css({'filter': "blur(0)"});
+          });
         });
-      });
+     
