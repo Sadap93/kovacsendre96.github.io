@@ -37,9 +37,24 @@
             $(this).css({'filter':'grayscale(0)'});
           }, function(){
 
-            $(this).css({'filter':'grayscale(60%)'});
+            $(this).css(
+              {'filter':'grayscale(60%)'});
           
           });
         });
 
       
+/* 
+        $(document).ready(function(){
+          $(".member1").hover(function(){
+            $(this).css(
+              {'width':'100%'}),
+            $(".hide").css({'display':'flex'})
+          }, function(){
+
+            $(this).css({'':''}),
+            $(".hide".css({'display':'none'}))
+          
+          });
+        });
+ */

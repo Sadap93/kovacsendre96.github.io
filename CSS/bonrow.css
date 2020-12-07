@@ -128,6 +128,7 @@ a:hover{
 .bioSection{
     color: white;
     padding-top:  100px;
+   
     
 }
 
@@ -165,6 +166,9 @@ a:hover{
     text-align: justify;
     font-size: 30px;
 }
+.hide{
+  
+}
 
 .members{
    
@@ -176,14 +180,18 @@ a:hover{
     transition: all 0.5s ease-out .1s ;
     text-align: center;
     padding: 15px;
+
   
 }
 
-.members:hover{
+ .members:hover{
     box-shadow:3px 6px 3px 0 grey ;
     transform: scale(1.1) ;
+   
     
-}
+} 
+
+
 
 .text{
     font-size: 1rem;
