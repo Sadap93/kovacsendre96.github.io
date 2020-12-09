@@ -1,10 +1,10 @@
 body{
  
-    background-image: url(/kovacsendre96.github.io/IMG/bonrow_casette.jpg);
-
+    background-image: url(/IMG/bonrow_casette.jpg);
+    background-size: cover;
     background-position:center;
-background-position-y: 10%;
-    background-size: 100%;
+    background-position-y: 10%;
+   
     background-attachment: fixed;
 }
 /*=====HEADER=====*/
@@ -69,6 +69,7 @@ a:hover{
     color: white;
     display: none;
 }
+
 
 
 @media(max-width: 768px){
@@ -166,9 +167,7 @@ a:hover{
     text-align: justify;
     font-size: 30px;
 }
-.hide{
-  
-}
+
 
 .members{
    
@@ -177,9 +176,10 @@ a:hover{
     border-radius: 2%;
     margin: 25px;
     filter: grayscale(60%);
-    transition: all 0.5s ease-out .1s ;
     text-align: center;
     padding: 15px;
+    transition: all 0.3s ease-out .1s ;
+    
 
   
 }
@@ -194,7 +194,7 @@ a:hover{
 
 
 .text{
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: left;
     line-height: 20px;
 }
@@ -205,13 +205,20 @@ a:hover{
 
 @media(min-width: 768px){
     .members{
-        display:inline-flex;
+        display:flex;
         
     
         
     }
+
+    .member1{
+        flex-direction: row-reverse;
+    }
+    .member3{
+        flex-direction: row-reverse;
+    }
     .background{
-        width: 90vw;
+        width: 100vw;
       
        
     }
@@ -220,14 +227,83 @@ a:hover{
         width: 250px;
         
     }
-   
+    
   
     
     }
     @media(min-width: 1200px){
         .background{
-            width: 60vw;
-
+            width: 50vw;
     }
 }
  
+
+
+
+
+
+/*=====Music=====*/
+
+
+.sectionMusic{
+  text-align: start;
+  position: relative;
+  top:20vh;
+  padding-left: 5vw;
+  background: rgba(0, 0, 0, 0.7);
+  height:100%;
+  
+}
+
+.iframe{
+    padding-bottom: 25px ;
+    
+}
+
+.iframe iframe{
+    position:relative;
+    width:200px;
+    height:140.625px;
+}
+.albumTitle{
+
+    font-size: clamp(25px, 3vw,3rem);
+    padding-bottom :25px;
+    color: white; 
+}
+
+@media(min-width: 768px){
+  
+  
+    .iframe iframe{
+        width:350px;
+        height:196.875px;
+        
+    }
+    .iframe{
+        text-align: center;
+    }
+}
+
+@media(min-width: 1200px){
+    .iframe iframe{
+        
+        width:450px;
+        height:253.125px;
+}
+}
+
+
+
+
+
+/*=====NEWS=====*/
+
+.sectionNews{
+    text-align: center;
+    position: relative;
+    top:20vh;
+    height:100%;
+    
+  }
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +10,26 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script   src="js.js" defer></script>
+    <script src="js.js" defer></script>
 </head>
+
 <body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v9.0" nonce="HlVKRCG6"></script>
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <img src="IMG/Névtelen.png" alt="bonrow">
+        <a class="bonrowLogo" href="bonrow.html"><img src="IMG/Névtelen.png" alt="bonrow"></a>
         <ul>
             <li id="top"><a href="#">Hírek</a></li>
             <li><a href="bio.html">Bio</a></li>
             <li><a href="#">Galéria</a></li>
-            <li><a href="#">Zene</a></li>
+            <li><a href="musc.html">Zene</a></li>
             <li><a href="#">Merch</a></li>
             <li><a href="#">Kapcsolat</a></li>
-            <li id="logos"> 
+            <li id="logos">
                 <a href="https://twitter.com/#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                 <a href="https://twitter.com/#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                 <a href="https://twitter.com/#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
@@ -34,9 +38,19 @@
                 <a href="https://twitter.com/#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                 <a href="https://twitter.com/#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                 <a href="https://twitter.com/#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-            </li>   
+            </li>
         </ul>
     </nav>
-  <section></section>
+    <section class="sectionNews">
+        <div class="fbWrapper">
+        <div class="fb-page" data-href="https://www.facebook.com/bonrowzenekar" data-tabs="timeline" data-width="500"
+            data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+            data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/bonrowzenekar" class="fb-xfbml-parse-ignore"><a
+                    href="https://www.facebook.com/bonrowzenekar">Bonrow</a></blockquote>
+        </div>
+    </div>
+    </section>
 </body>
+
 </html>
