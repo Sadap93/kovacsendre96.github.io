@@ -41,14 +41,14 @@ nav ul li{
 img{
     height: 100%;
 }
-nav ul li a{
+.nav__links{
     color: white;
     font-size: clamp(18px, 2vw, 25px);
     padding: 7px 10px;
     border-radius: 3px;
     text-transform: uppercase;
 }
-a:hover{
+.nav__links:hover{
     background-color: #1b9bff;
     transition: .5s;
 }
@@ -96,7 +96,7 @@ a:hover{
        
     }
    
-    a:hover{
+    .nav__links:hover{
         background: none;
         color: #0082e6;
     }
@@ -246,7 +246,7 @@ a:hover{
 
 
 .sectionMusic{
-  text-align: start;
+  text-align: center;
   position: relative;
   top:20vh;
   padding-left: 5vw;
